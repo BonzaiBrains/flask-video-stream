@@ -1,0 +1,8 @@
+[Unit]
+Description=Flask video stream
+
+[Service]
+ExecStart=/usr/bin/python3 /flask-video-stream/server.py --port 80
+
+[Install]
+WantedBy=multi-user.target
